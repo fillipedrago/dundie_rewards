@@ -18,3 +18,15 @@ e que no futuro terá também as interfaces UI, web e API.
 
 Os dados dos funcionários atuais serão fornecidos em um arquivo que pode ser no formato .csv ou .json
 e este mesmo arquivo poderá ser usado para versões futuras. `Nome, Depto, Cargo, Email`
+
+## Installation
+
+```py
+pip install seu nome-dundie
+```
+
+## Usage
+
+```py
+dundie load assets/people.csv
+```

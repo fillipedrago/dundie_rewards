@@ -27,7 +27,6 @@ def main():
         "filepath",
         type=str,
         help="Filepath to load",
-        default="help",
         default=None
     )
     args = parser.parse_args()
