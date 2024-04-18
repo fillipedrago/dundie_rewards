@@ -21,8 +21,5 @@ def main():
     )
     args = parser.parse_args()
 
-    try:
-        print(*globals()[args.subcommand](args.filepath))
-    except KeyError:
-        print("Subcommand is invalid")
-
+    print(*globals()[args.subcommand](args.filepath))
+    
