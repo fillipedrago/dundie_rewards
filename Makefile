@@ -9,3 +9,9 @@ virtualenv:
 
 ipython:
 	@.venv/bin/ipython
+
+test:
+	@.venv/bin/pytest -vv -s tests/
+
+watch:
+	@.venv/bin/ptw -- -vv -s tests/
