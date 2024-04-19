@@ -2,16 +2,19 @@
 
 install:
 	@echo "Installing for dev enviroment"
-	@.venv/bin/python -m pip install -e '.[dev]'
+	@.venv/Scripts/python -m pip install -e '.[dev]'
 
 virtualenv:
-	@.venv/bin/python -m pip -m venv .venv
+	@.venv/Scripts/python -m pip -m venv .venv
 
 ipython:
-	@.venv/bin/ipython
+	@.venv/Scripts/ipython
 
 test:
-	@.venv/bin/pytest -s 
+	@.venv/Scripts/pytest -s 
+
+testci:
+	@pytest -v --junitxml=test-result.xml
 
 watch:
-	@.venv/bin/ptw
+	@.venv/Scripts/ptw
