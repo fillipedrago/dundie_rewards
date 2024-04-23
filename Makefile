@@ -10,6 +10,10 @@ virtualenv:
 ipython:
 	@.venv/Scripts/ipython
 
+fmt:
+	@.venv/Scripts/isort dundie tests integration
+	@.venv/Scripts/black dundie tests integration
+
 lint:
 	@.venv/Scripts/pflake8
 
