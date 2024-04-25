@@ -2,7 +2,9 @@ ipython>=7.0.0,<=8.23.0
 ipdb
 pudb
 pytest-watch
-
+click
+rich
+rich-click
 
 # Code Quality
 flake8
