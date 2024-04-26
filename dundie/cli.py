@@ -1,4 +1,3 @@
-import pkg_resources
 import rich_click as click
 from rich.console import Console
 from rich.table import Table
@@ -14,7 +13,6 @@ click.rich_click.APPEND_METAVARS_HELP = True
 
 
 @click.group()
-@click.version_option(pkg_resources.get_distribution("dundie").version)
 def main():
     """Dunder Mifflin Rewards System.
 
