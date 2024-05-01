@@ -1,7 +1,7 @@
 import pytest
 from click.testing import CliRunner
 
-from dundie.cli import main, load
+from dundie.cli import load, main
 
 from .constants import PEOPLE_FILE
 
