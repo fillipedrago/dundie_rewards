@@ -18,7 +18,7 @@ lint:
 	@.venv/Scripts/pflake8
 
 test:
-	@.venv/Scripts/pytest -s 
+	@.venv/Scripts/pytest -s --forked
 
 testci:
 	@pytest -v --junitxml=test-result.xml
